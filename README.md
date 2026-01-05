@@ -10,20 +10,20 @@ nominal uang, serta nilai FPS secara langsung.
 ---
 
 ## Fitur Utama
-- Deteksi nominal uang rupiah:  
+- Deteksi nominal uang rupiah kertas:  
   **Rp1.000, Rp2.000, Rp5.000, Rp10.000, Rp20.000, Rp50.000, Rp100.000**
 - Deteksi objek real-time menggunakan kamera USB
 - Performa real-time ±28–33 FPS pada Jetson Orin Nano
 - Implementasi berbasis Ultralytics YOLO
-- Siap dikembangkan ke TensorRT untuk optimasi performa
 
 ---
 
 ## Arsitektur Sistem
-1. Kamera USB menangkap citra secara real-time  
-2. Citra diproses oleh model YOLO terlatih  
-3. Model menghasilkan bounding box dan label nominal  
-4. Hasil deteksi ditampilkan pada layar beserta FPS  
+1. Kamera menangkap citra uang rupiah secara real-time.
+2. Preprocessing menyesuaikan citra agar kompatibel dengan model YOLO.
+3. YOLO mendeteksi dan mengklasifikasikan nominal uang dalam satu tahap inferensi.
+4. Jetson Orin Nano menjalankan proses inferensi secara lokal tanpa ketergantungan cloud.
+5. Output sistem menampilkan hasil deteksi nominal uang secara real-time
 
 ---
 
