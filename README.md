@@ -9,7 +9,7 @@ nominal uang, serta nilai FPS secara langsung.
 
 ---
 
-## 📌 Fitur Utama
+## Fitur Utama
 - Deteksi nominal uang rupiah:  
   **Rp1.000, Rp2.000, Rp5.000, Rp10.000, Rp20.000, Rp50.000, Rp100.000**
 - Deteksi objek real-time menggunakan kamera USB
@@ -19,7 +19,7 @@ nominal uang, serta nilai FPS secara langsung.
 
 ---
 
-## 🧠 Arsitektur Sistem
+## Arsitektur Sistem
 1. Kamera USB menangkap citra secara real-time  
 2. Citra diproses oleh model YOLO terlatih  
 3. Model menghasilkan bounding box dan label nominal  
@@ -27,4 +27,11 @@ nominal uang, serta nilai FPS secara langsung.
 
 ---
 
-## 📂 Struktur Repositori
+## Dependencies:
+- Ubuntu 20.04 (Jetson Orin Nano)
+- JetPack 6
+- Python 3.10
+- Ultralytics YOLO
+- PyTorch (NVIDIA ARM64 build)
+- OpenCV
+- NumPy
