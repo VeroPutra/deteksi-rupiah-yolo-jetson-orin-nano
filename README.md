@@ -4,8 +4,7 @@
 Repositori ini berisi implementasi sistem deteksi nominal uang rupiah secara real-time
 menggunakan algoritma **YOLO (You Only Look Once)** yang dijalankan pada perangkat
 **Jetson Orin Nano** sebagai edge AI device. Sistem memanfaatkan kamera USB sebagai
-sumber input citra dan mampu menampilkan hasil deteksi berupa bounding box, label
-nominal uang, serta nilai FPS secara langsung.
+sumber input citra dan mampu menampilkan hasil deteksi berupa bounding box serta label nominal uang secara langsung.
 
 ---
 
